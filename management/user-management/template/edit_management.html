@@ -1,0 +1,44 @@
+{TOPO}
+
+<!-- BEGIN MENSAGEM -->
+<span class="msg">{MSG}</span>
+<!-- END MENSAGEM -->
+
+<div class="miolo">
+  <h3>Editar usuário</h3>
+
+
+  <div class="containerCadastrarUsuario">
+    <div class="formCadastrarUsuario">
+      <form action="/clubes-brasil-2/sql/user-sql/update_user.php" method="post">
+        <input type="hidden" name="id" value="{ID_USUARIO}">
+
+        <label>Perfil:</label>
+        <select name="perfil" id="perfil">
+          <option value="1">Admistrador</option>
+          <option value="2" selected>Manutenção</option>
+          <option value="3">Usuário</option>
+        </select>
+
+        <label>Nome: </label>
+        <input type="text" name="nome" id="nome" value="{NOME}" required>
+
+        <label>Sobrenome: </label>
+        <input type="text" name="sobrenome" id="sobrenome" value="{SOBRENOME}" required>
+
+        <label>Email: </label>
+        <input type="email" name="email" id="email" value="{EMAIL}" required>
+
+        <label>Telefone: </label>
+        <input type="tel" name="telefone" id="telefone" value="{TELEFONE}" required>
+
+        <input type="submit" value="Editar" required>
+      </form>
+    </div>
+    <a href="/clubes-brasil-2/management/user-management/login_management.php">
+      <button>Voltar</button>
+    </a>
+  </div>
+</div>
+
+{RODAPE}

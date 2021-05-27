@@ -1,0 +1,47 @@
+{TOPO}
+
+<!-- BEGIN MENSAGEM -->
+<span class="msg">{MSG}</span>
+<!-- END MENSAGEM -->
+
+<div class="miolo">
+  
+  <!-- BEGIN USUARIOS_CADASTRADOS -->
+  <h3>Usuários cadastrados</h3>
+
+  <a href="/clubes-brasil-2/management/management.php">
+    <button>Voltar</button>
+  </a>
+
+  <div class="containerUsuariosCadastrados">
+    <!-- BEGIN DADOS -->
+    <div class="boxUsuariosCadastrados">
+      <div class="infoUsuariosCadastrados">
+        <p>Nome: {NOME} {SOBRENOME}</p>
+        <p>Email: {EMAIL}</p>
+        <p>Tel: {TELEFONE}</p>
+      </div>
+
+      <div class="infoBotoesUsuariosCadastrados">
+        <a href="/clubes-brasil-2/management/user-management/edit_management.php?id={EDITAR_USUARIO}">
+          <button>Editar</button>
+        </a>
+        <a href="/clubes-brasil-2/management/user-management/update_password_management.php?id={EDITAR_SENHA}">
+          <button>Senha</button>
+        </a>
+        <a href="/clubes-brasil-2/sql/user-sql/delete_user.php?id={EXCLUIR_USUARIO}">
+          <button>Excluir</button>
+        </a>
+      </div>
+    </div>
+    <!-- END DADOS -->
+  </div>
+  <!-- END USUARIOS_CADASTRADOS -->
+
+  <!-- BEGIN SEM_USUARIOS_CADASTRADOS -->
+  <h4>Não existem usuários cadastrados!</h4>
+  <!-- END SEM_USUARIOS_CADASTRADOS -->
+
+</div>
+
+{RODAPE}

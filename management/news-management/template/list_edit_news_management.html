@@ -1,0 +1,61 @@
+{TOPO}
+
+<!-- BEGIN MENSAGEM -->
+<span class="msg">{MSG}</span>
+<!-- END MENSAGEM -->
+
+<div class="miolo">
+  
+  <!-- BEGIN NOTICIAS_CADASTRADAS -->
+  <h3>Notícias cadastradas</h3>
+
+  <a href="/clubes-brasil-2/management/management.php">
+    <button>Voltar</button>
+  </a>
+
+  <div class="containerNoticiasCadastradas">
+    <!-- BEGIN DADOS -->
+    <div class="boxNoticiasCadastradas">
+      <div class="infoNoticiasCadastradas">
+        <h4>{TITULO}</h4>
+        <p>{CONTEUDO}</p>
+        <span>Data: {DATA_CADASTRO}</span> <span>Id: {ID_NOTICIA}</span>
+        <a href="/clubes-brasil-2/management/news-management/edit_news_management.php?id={EDITAR_NOTICIA}">
+          <button>Editar</button>
+        </a>
+
+        <!-- BEGIN BLOCO_EXCLUIR_NOTICIA -->
+        <a href="/clubes-brasil-2/sql/news-sql/delete_news.php?id={EXCLUIR_NOTICIA}">
+          <button>Excluir</button>
+        </a>
+        <!-- END BLOCO_EXCLUIR_NOTICIA -->
+      </div>
+    </div>
+    <!-- END DADOS -->
+  </div>
+
+  <!-- BEGIN PAGINACAO -->
+  <div class="paginacao">
+    <!-- BEGIN VOLTAR -->
+    <p><a href="/clubes-brasil-2/management/news-management/list_edit_news_management.php?pagina={PG_PRIMEIRA}">Primeira</a></p>
+    <p><a href="/clubes-brasil-2/management/news-management/list_edit_news_management.php?pagina={PG_ANTERIOR}">{PG_ANTERIOR}</a></p>
+    <!-- END VOLTAR -->
+    
+    <p class="pg_atual">{PG_ATUAL}</p>
+    
+    <!-- BEGIN AVANCAR -->
+    <p><a href="/clubes-brasil-2/management/news-management/list_edit_news_management.php?pagina={PG_PROXIMA}">{PG_PROXIMA}</a></p>
+    <p><a href="/clubes-brasil-2/management/news-management/list_edit_news_management.php?pagina={PG_ULTIMA}">Última</a></p>
+    <!-- END AVANCAR -->
+  </div>
+
+  <!-- END PAGINACAO -->
+  <!-- END NOTICIAS_CADASTRADAS -->
+
+  <!-- BEGIN SEM_NOTICIAS_CADASTRADAS -->
+  <h4>Não existem notícias cadastradas!</h4>
+  <!-- END SEM_NOTICIAS_CADASTRADAS -->
+</div>
+
+
+{RODAPE}

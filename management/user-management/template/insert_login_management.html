@@ -1,0 +1,35 @@
+{TOPO}
+
+<!-- BEGIN MENSAGEM -->
+<span class="msg">{MSG}</span>
+<!-- END MENSAGEM -->
+
+<div class="miolo">
+  <h3>Cadastrar usuário</h3>
+
+  <div class="containerCadastrarUsuario">
+    <div class="formCadastrarUsuario">
+      <form action="/clubes-brasil-2/sql/user-sql/insert_user.php" method="post">
+
+        <select name="perfil" id="perfil">
+          <option value="1">Admistrador</option>
+          <option value="2" selected>Manutenção</option>
+          <option value="3">Usuário</option>
+        </select>
+
+        <input type="text" name="nome" id="nome" placeholder="Nome" required>
+        <input type="text" name="sobrenome" id="sobrenome" placeholder="Sobrenome" required>
+        <input type="email" name="email" id="email" placeholder="Email" required>
+        <input type="tel" name="telefone" id="telefone" placeholder="Telefone" required>
+        <input type="password" name="senha" id="senha" placeholder="senha" required>
+        <input type="submit" value="Cadastrar" required>
+      </form>
+    </div>
+    <a href="/clubes-brasil-2/management/management.php">
+      <button>Voltar</button>
+    </a>
+  </div>
+
+</div>
+
+{RODAPE}

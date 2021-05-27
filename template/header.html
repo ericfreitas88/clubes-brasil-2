@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/clubes-brasil-2/template/css/style.css">
+  <title>Clubes Brasil</title>
+</head>
+
+<body>
+  <div class="contentBody">
+
+    <header>
+      <div class="contentHeader">
+
+        <div class="topo">
+          <div class="header">
+            <div class="logo">
+              <figure>
+                <a href="/clubes-brasil-2/index.php">
+                  <img src="/clubes-brasil-2/img/clubes brasil.png" alt="Logo Clubes Brasil">
+                </a>
+              </figure>
+            </div>
+
+            <nav class="navbar">
+              <a href="/clubes-brasil-2/index.php">Home</a>
+              <a href="/clubes-brasil-2/system/news.php">Notícias</a>
+              <a href="/clubes-brasil-2/system/contact.php">Contato</a>
+
+              <!-- BEGIN LOGADO -->
+                <!-- BEGIN USUARIO_ADM -->
+                  <div class="usuarioLogado">
+                    <a href="/clubes-brasil-2/management/management.php">Adm</a>
+
+                    <div class="drop_down">
+                      <a href="#">Perfil</a>
+
+                      <div class="dropdown">
+                        <a href="/clubes-brasil-2/management/user-management/perfil_management.php?id={EDITAR_PERFIL}">Atualizar Dados</a>
+                        <a href="/clubes-brasil-2/management/user-management/perfil_password_management.php?id={EDITAR_PERFIL}">Atualizar Senha</a>
+                      </div>
+                    </div>
+
+                    <a href="/clubes-brasil-2/system/quit.php">Sair</a>
+                    <p class="nomeUsuarioLogado">{NOME_USUARIO}</p>
+                  <div>
+                <!-- END USUARIO_ADM -->
+
+                <!-- BEGIN USUARIO -->
+                  <div class="usuarioLogado">
+                    <div class="drop_down">
+                      <a href="/clubes-brasil-2/management/user-management/perfil_management.php?id={EDITAR_PERFIL}">Perfil</a>
+
+                      <div class="dropdown">
+                        <a href="/clubes-brasil-2/management/user-management/perfil_management.php?id={EDITAR_PERFIL}">Atualizar Dados</a>
+                        <a href="/clubes-brasil-2/management/user-management/perfil_password_management.php?id={EDITAR_PERFIL}">Atualizar Senha</a>
+                      </div>
+
+                    </div>
+                    <a href="/clubes-brasil-2/system/quit.php">Sair</a>
+                    <p class="nomeUsuarioLogado">{NOME_USUARIO}</p>
+                  </div>
+                <!-- END USUARIO -->
+              <!-- END LOGADO -->
+
+              <!-- BEGIN DESLOGADO -->
+               <a href="/clubes-brasil-2/system/login.php">Login</a>
+              <!-- END DESLOGADO -->
+            </nav>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="containerMiolo">

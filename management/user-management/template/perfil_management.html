@@ -1,0 +1,39 @@
+{TOPO}
+
+<!-- BEGIN MENSAGEM -->
+<span class="msg">{MSG}</span>
+<!-- END MENSAGEM -->
+
+<div class="miolo">
+  <div class="containerAtualizarPerfil">
+
+    <div class="atualizarPerfil">
+      <h3>Atualizar dados</h3>
+
+      <div class="containerCadastrarUsuario">
+
+        <div class="formCadastrarUsuario">
+          <form action="/clubes-brasil-2/sql/user-sql/update_perfil.php" method="post">
+            <input type="hidden" name="id" value="{ID_USUARIO}">
+
+            <label>Nome: </label>
+            <input type="text" name="nome" id="nome" value="{NOME}" required>
+
+            <label>Sobrenome: </label>
+            <input type="text" name="sobrenome" id="sobrenome" value="{SOBRENOME}" required>
+
+            <label>Email: </label>
+            <input type="email" name="email" id="email" value="{EMAIL}" required>
+
+            <label>Telefone: </label>
+            <input type="tel" name="telefone" id="telefone" value="{TELEFONE}" required>
+
+            <input type="submit" value="Atualizar" required>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+{RODAPE}

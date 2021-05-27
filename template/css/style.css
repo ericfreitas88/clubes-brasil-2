@@ -1,0 +1,1021 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto Light', sans-serif;
+}
+
+@font-face {
+  font-family: 'Roboto', sans-serif;
+  font-family: 'Roboto Thin', sans-serif;
+  font-family: 'Roboto Light', sans-serif;
+  font-family: 'Roboto Medium', sans-serif;
+  font-family: 'Roboto Black', sans-serif;
+  src: url('http://fonts.cdnfonts.com/css/roboto');
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.contentBody {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.contentHeader {
+  flex: 0 0 auto;
+  margin-bottom: 5px;
+}
+
+.contentFooter {
+  flex: 0 0 auto;
+}
+
+.msg {
+  color: red;
+  text-transform: uppercase;
+}
+
+/* CSS TOPO */
+
+.topo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #333333;
+  width: 100%;
+  height: 80px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 80px;
+  margin: 0 15px;
+}
+
+.logo {
+  width: 320px;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  background-color: #000000;
+  min-height: 50px;
+  border-radius: 10px;
+  padding: 0 10px;
+  max-width: 700px;
+}
+
+.navbar a {
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 10px;
+  box-sizing: border-box;
+  color: #ffffff;
+}
+
+.navbar a:hover {
+  color: #f56301;
+}
+
+.nomeUsuarioLogado {
+  flex-wrap: nowrap;
+  max-width: 100px;
+  max-height: 38px;
+  text-transform: uppercase;
+  color: #f56301;
+  font-weight: 600;
+  padding: 10px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.usuarioLogado {
+  display: flex;
+  align-items: center;
+}
+
+.drop_down {
+  height: 50px;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.dropdown {
+  display: none;
+  background-color: #232323;
+  width: 150px;
+  font-size: 13px;
+  position: absolute;
+  top: 100%;
+}
+
+.dropdown a {
+  color: white;
+  padding: 10px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown a:hover {
+  color: white;
+  background-color: #f56301;
+}
+
+.drop_down:hover .dropdown {
+  display: block;
+}
+
+/* CSS PÁGINA INICIAL */
+
+.containerMiolo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  flex: 1 1 auto;
+}
+
+.miolo {
+  width: 1024px;
+  margin: 15px 0 15px 0;
+}
+
+.miolo button {
+  cursor: pointer;
+  box-sizing: border-box;
+  padding: 2px;
+  width: 100px;
+  height: 30px;
+  text-transform: uppercase;
+  background-color: #333333;
+  color: #ffffff;
+  margin: 5px 15px 0 15px;
+  ;
+}
+
+.miolo button:hover {
+  color: #f56301;
+}
+
+.miolo h3 {
+  text-transform: uppercase;
+  color: #f56301;
+  margin: 15px 0 0 15px;
+}
+
+.containerBoxNoticiaHome {
+  display: flex;
+  flex-flow: row wrap;
+  margin-top: 15px;
+}
+
+.boxNoticiaHome {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  background-color: #333333;
+  color: #ffffff;
+  width: 215px;
+  height: 300px;
+  margin: 15px 20.5px;
+  box-shadow: 0 1px 3px rgb(0 0 0 / 12%);
+}
+
+.boxNoticiaHome:hover {
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25);
+  cursor: pointer;
+}
+
+.infoBoxNoticiaHome {
+  width: 215px;
+  height: 140px;
+  text-overflow: ellipsis;
+}
+
+.boxNoticiaHome h4 {
+  text-align: center;
+  text-transform: capitalize;
+  width: 215px;
+  height: 30px;
+  border-bottom: solid 2px #f56301;
+  border-top: solid 2px #f56301;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  padding: 5px 10px;
+  box-sizing: border-box;
+}
+
+.boxNoticiaHome p {
+  width: 215px;
+  height: 110px;
+  box-sizing: border-box;
+  padding: 5px 10px;
+  overflow: hidden;
+  font-size: 14px;
+  line-height: 20px;
+  word-spacing: 2px;
+}
+
+.rodape {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #333333;
+  width: 100%;
+  height: 110px;
+  color: #f56301;
+}
+
+.infoRodape {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 200px;
+  height: 110px;
+}
+
+.infoRodape h4 {
+  font-size: 16px;
+  box-sizing: border-box;
+  padding: 5px 10px 0 10px;
+}
+
+.infoRodape p {
+  font-size: 13px;
+  box-sizing: border-box;
+  padding: 0px 10px;
+  margin-top: -2px;
+}
+
+.redesSociaisRodape {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  width: 200px;
+  height: 110px;
+}
+
+.redesSociaisRodape svg {
+  color: #f56301;
+}
+
+/* CSS PÁGINA NOTÍCIAS */
+
+.containerBoxNoticiaNews {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  margin-top: 15px;
+}
+
+.boxNoticiaNews {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  background-color: #333333;
+  color: #ffffff;
+  width: 100%;
+  height: 350px;
+  margin: 15px;
+}
+
+.infoBoxNoticiaNews {
+  width: 100%;
+  height: 150px;
+}
+
+.boxNoticiaNews h4 {
+  text-align: center;
+  text-transform: capitalize;
+  width: 100%;
+  height: 30px;
+  border-bottom: solid 2px #f56301;
+  border-top: solid 2px #f56301;
+  padding: 5px 10px;
+  box-sizing: border-box;
+}
+
+.boxNoticiaNews p {
+  width: 100%;
+  height: 100px;
+  box-sizing: border-box;
+  padding: 5px 10px;
+  font-size: 17px;
+  line-height: 20px;
+  word-spacing: 2px;
+}
+
+.paginacao {
+  display: flex;
+  margin-left: 5px;
+}
+
+.paginacao p {
+  margin: 0 10px 0 10px;
+}
+
+.paginacao p a {
+  color: #f56301;
+  text-decoration: none;
+  box-sizing: border-box;
+  padding: 10px;
+}
+
+.pg_atual {
+  text-decoration: underline;
+  font-weight: 600;
+  color: black;
+  font-size: 17px;
+}
+
+/* CSS PÁGINA CONTATO */
+
+.containerContato {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  margin-top: 30px;
+}
+
+.form_contato form {
+  display: flex;
+}
+
+.form_input {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.form_input input[type="text"], .form_input input[type="email"] {
+  width: 370px;
+  height: 25px;
+  font-size: 16px;
+  padding: 0 0 0 5px;
+  margin: 5px;
+  box-sizing: border-box;
+  border: none;
+  border-bottom: 1px solid #f56301;
+  color: #f56301;
+  outline: none;
+  letter-spacing: 0.5px;
+}
+
+.form_input input[type="file"] {
+  display: none;
+}
+
+.form_input label {
+  padding: 10px 10px;
+  width: 200px;
+  background-color: #333333;
+  color: #ffffff;
+  text-transform: uppercase;
+  text-align: center;
+  display: block;
+  margin: 0 auto;
+  cursor: pointer;
+}
+
+.form_input label:hover {
+  color: #f56301;
+}
+
+.form_mensagem {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.form_mensagem textarea {
+  width: 570px;
+  height: 220px;
+  font-size: 16px;
+  padding: 5px;
+  margin: 5px;
+  box-sizing: border-box;
+  border: 1px solid #f56301;
+  border-bottom: 1px solid #f56301;
+  outline: none;
+  letter-spacing: 0.5px;
+  resize: none;
+}
+
+.form_mensagem input[type="submit"] {
+  width: 570px;
+  background-color: #333333;
+  color: #ffffff;
+  height: 25px;
+}
+
+.form_mensagem input[type="submit"]:hover {
+  color: #f56301;
+}
+
+/* CSS PÁGINA ADM */
+
+.admin {
+  display: flex;
+  flex-direction: column;
+}
+
+.admin_news_user {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15px;
+}
+
+.admin_news_user span {
+  font-weight: 600;
+  display: list-item;
+  list-style-position: inside;
+  margin-bottom: 10px;
+}
+
+.admin_news_user a {
+  display: table;
+  color: #494949;
+  margin-left: 45px;
+  margin-bottom: 10px;
+  text-decoration: none;
+  width: 200px;
+}
+
+.admin_news_user a:hover {
+  color: #f56301;
+}
+
+/* CSS PÁGINA ADM NOTÍCIAS*/
+
+.containerCadastrarNoticia {
+  margin-left: 10px;
+}
+
+.containerCadastrarNoticia button {
+  cursor: pointer;
+  box-sizing: border-box;
+  padding: 2px;
+  width: 100px;
+  height: 30px;
+  text-transform: uppercase;
+  background-color: #333333;
+  color: #ffffff;
+  margin: 0 5px;
+}
+
+.containerCadastrarNoticia button:hover {
+  color: #f56301;
+}
+
+.formCadastrarNoticia form {
+  display: flex;
+  flex-direction: column;
+}
+
+.formCadastrarNoticia form input[type="text"] {
+  width: 300px;
+  height: 25px;
+  font-size: 16px;
+  padding: 0 0 0 5px;
+  margin: 5px;
+  box-sizing: border-box;
+  border: none;
+  border-bottom: 1px solid #f56301;
+  color: #000000;
+  outline: none;
+  letter-spacing: 0.5px;
+}
+
+.formCadastrarNoticia form textarea {
+  width: 570px;
+  height: 220px;
+  font-size: 16px;
+  padding: 5px;
+  margin: 5px;
+  box-sizing: border-box;
+  border: 1px solid #f56301;
+  border-bottom: 1px solid #f56301;
+  outline: none;
+  letter-spacing: 0.5px;
+  resize: none;
+}
+
+.formCadastrarNoticia form input[type="submit"] {
+  width: 100px;
+  height: 30px;
+  cursor: pointer;
+  text-transform: uppercase;
+  background-color: #333333;
+  color: #ffffff;
+  padding: 0 0 0 5px;
+  margin: 5px;
+}
+
+.formCadastrarNoticia form input[type="submit"]:hover {
+  color: #f56301;
+}
+
+.containerNoticiasCadastradas {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  margin-top: 15px;
+}
+
+.boxNoticiasCadastradas {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  background-color: #333333;
+  color: #ffffff;
+  width: 100%;
+  height: 350px;
+  margin: 15px;
+}
+
+.infoNoticiasCadastradas {
+  width: 100%;
+  height: 170px;
+}
+
+.boxNoticiasCadastradas h4 {
+  text-align: center;
+  text-transform: capitalize;
+  width: 100%;
+  height: 30px;
+  border-bottom: solid 2px #f56301;
+  border-top: solid 2px #f56301;
+  padding: 5px 10px;
+  box-sizing: border-box;
+}
+
+.boxNoticiasCadastradas p {
+  width: 100%;
+  height: 100px;
+  box-sizing: border-box;
+  padding: 5px 10px;
+  font-size: 17px;
+  line-height: 20px;
+  word-spacing: 2px;
+}
+
+.boxNoticiasCadastradas span {
+  box-sizing: border-box;
+  padding: 5px 10px;
+}
+
+.boxNoticiasCadastradas button {
+  cursor: pointer;
+  box-sizing: border-box;
+  padding: 2px;
+  width: 80px;
+  height: 25px;
+  text-transform: uppercase;
+  background-color: #333333;
+  color: #ffffff;
+  margin: 0 5px;
+}
+
+.boxNoticiasCadastradas button:hover {
+  color: #f56301;
+}
+
+/* CSS PÁGINA ADM EDITAR NOTÍCIAS*/
+
+.containerEditarNoticia button {
+  cursor: pointer;
+  box-sizing: border-box;
+  padding: 2px;
+  width: 100px;
+  height: 30px;
+  text-transform: uppercase;
+  background-color: #333333;
+  color: #ffffff;
+  margin: 0 5px;
+}
+
+.containerEditarNoticia button:hover {
+  color: #f56301;
+}
+
+/* CSS PÁGINA ADM USUÁRIOS*/
+
+.containerCadastrarUsuario button {
+  cursor: pointer;
+  box-sizing: border-box;
+  padding: 2px;
+  width: 100px;
+  height: 30px;
+  text-transform: uppercase;
+  background-color: #333333;
+  color: #ffffff;
+  margin: 0 13px;
+}
+
+.containerCadastrarUsuario button:hover {
+  color: #f56301;
+}
+
+.formCadastrarUsuario form {
+  display: flex;
+  flex-direction: column;
+  padding: 0 0 0 5px;
+  margin: 5px;
+}
+
+.formCadastrarUsuario form select {
+  width: 300px;
+  height: 25px;
+  font-size: 14px;
+  text-transform: uppercase;
+  padding: 0 0 0 5px;
+  margin: 5px;
+  box-sizing: border-box;
+  border: none;
+  border-bottom: 1px solid #f56301;
+  color: #000000;
+  outline: none;
+  letter-spacing: 0.5px;
+}
+
+.formCadastrarUsuario form input[type="text"], .formCadastrarUsuario form input[type="email"], .formCadastrarUsuario form input[type="tel"], .formCadastrarUsuario form input[type="password"] {
+  width: 300px;
+  height: 25px;
+  font-size: 14px;
+  padding: 0 0 0 5px;
+  margin: 5px;
+  box-sizing: border-box;
+  border: none;
+  border-bottom: 1px solid #f56301;
+  color: #000000;
+  outline: none;
+  letter-spacing: 0.5px;
+}
+
+.formCadastrarUsuario form input[type="submit"] {
+  width: 100px;
+  height: 30px;
+  cursor: pointer;
+  text-transform: uppercase;
+  background-color: #333333;
+  color: #ffffff;
+  padding: 0 0 0 5px;
+  margin: 5px;
+}
+
+.formCadastrarUsuario form input[type="submit"]:hover {
+  color: #f56301;
+}
+
+.formCadastrarUsuario label {
+  box-sizing: border-box;
+  margin: 0 5px;
+  font-weight: 600;
+}
+
+.containerUsuariosCadastrados {
+  display: flex;
+  flex-flow: row wrap;
+  margin-top: 15px;
+}
+
+.boxUsuariosCadastrados {
+  display: flex;
+  flex-direction: column;
+  background-color: #333333;
+  color: #ffffff;
+  width: 400px;
+  height: 200px;
+  margin: 15px;
+  box-sizing: border-box;
+  padding: 5px;
+}
+
+.infoUsuariosCadastrados {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.infoUsuariosCadastrados p {
+  flex-grow: 1;
+  width: 100%;
+  height: 30px;
+  box-sizing: border-box;
+  padding: 5px 10px;
+  font-size: 15px;
+  line-height: 20px;
+  word-spacing: 2px;
+}
+
+.infoBotoesUsuariosCadastrados {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin-bottom: 3px;
+}
+
+.infoBotoesUsuariosCadastrados button {
+  cursor: pointer;
+  box-sizing: border-box;
+  padding: 2px;
+  width: 80px;
+  height: 25px;
+  text-transform: uppercase;
+  background-color: #333333;
+  color: #ffffff;
+  margin: 0 5px;
+}
+
+.boxUsuariosCadastrados button:hover {
+  color: #f56301;
+}
+
+/* CSS PÁGINA PERFIL*/
+
+.containerAtualizarPerfil {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 15px;
+}
+
+.atualizarPerfil, .atualizarSenha {
+  height: 315px;
+}
+
+/* CSS PÁGINA LOGIN*/
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.login {
+  width: 320px;
+  height: 420px;
+  border: 2px solid #f56301;
+  border-radius: 80px 0px 80px 0px;
+  color: #ffffff;
+  background-color: #333333;
+  box-sizing: border-box;
+  padding: 68px 28px;
+}
+
+.login p {
+  margin: 0;
+  padding: 0;
+  font-weight: bold;
+  color: #f56301;
+}
+
+.login input {
+  width: 100%;
+  margin-bottom: 21px;
+}
+
+.login input[type="email"], input[type="password"] {
+  border: none;
+  border-bottom: 1px solid #f56301;
+  background: transparent;
+  outline: none;
+  height: 40px;
+  color: white;
+  font-size: 16px;
+}
+
+.login input[type="submit"] {
+  text-transform: uppercase;
+  border: none;
+  outline: none;
+  height: 35px;
+  color: #ffffff;
+  background: #232323;
+  border-radius: 20px;
+  transition: 0.2s;
+}
+
+.login input[type="submit"]:hover {
+  cursor: pointer;
+  background: #f56301;
+  color: #232323;
+  transition: 0.2s;
+}
+
+.login a {
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 14px;
+  line-height: 20px;
+  color: #ffffff;
+  transition: 0.2s;
+}
+
+.login a:hover {
+  transition: 0.2s;
+  color: #f56301;
+}
+
+/* Media Query */
+
+@media (min-width:320px) and (max-width: 846px) {
+  .topo {
+    height: 200px;
+  }
+  .header {
+    flex-direction: column;
+    justify-content: center;
+    height: 100%
+  }
+  .logo img {
+    width: 310px;
+object-fit: cover;
+  }
+  .navbar {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .miolo {
+    width: 100%;
+    margin: 15px 0 15px 0;
+  }
+  .containerBoxNoticiaHome {
+    display: flex;
+    flex-flow: row wrap;
+    margin-top: 5px;
+    justify-content: center;
+  }
+  .containerBoxNoticiaNews {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    margin-top: 5px;
+  }
+  .boxNoticiaNews {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: #333333;
+    color: #ffffff;
+    width: 100%;
+    height: 350px;
+    margin: 15px auto;
+  }
+  .containerContato {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+  }
+  .form_contato form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .form_input input[type="text"], .form_input input[type="email"] {
+    width: 310px;
+  }
+  .form_mensagem textarea {
+    width: calc(100% - 30px);
+    height: 260px;
+  }
+  .form_mensagem input[type="submit"] {
+    width: calc(100% - 30px);
+    height: 30px;
+  }
+  .infoBoxNoticiaNews {
+    width: 100%;
+    height: 100%;
+  }
+  .boxNoticiaNews p {
+    width: 100%;
+    height: 300px;
+    box-sizing: border-box;
+    padding: 5px 10px;
+    font-size: 17px;
+    line-height: 20px;
+    word-spacing: 2px;
+    text-align: justify;
+    margin: 15px 0 0 0;
+  }
+  .miolo h3 {
+    margin: 0 auto;
+    text-align: center;
+  }
+  .boxNoticiaNews h4 {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+  }
+  .boxNoticiaHome {
+    justify-content: flex-start;
+    width: 300px;
+    height: 140px;
+    margin: 15px auto;
+  }
+  .infoBoxNoticiaHome {
+    width: 100%;
+  }
+  .boxNoticiaHome h4 {
+    width: 100%;
+  }
+  .boxNoticiaHome p {
+    width: 100%;
+  }
+  .admin_news_user {
+    align-items: flex-start;
+    margin-left: 10px;
+  }
+  .containerCadastrarNoticia {
+    margin-left: 5px;
+  }
+  .formCadastrarNoticia form input[type="text"] {
+    width: 300px;
+  }
+  .formCadastrarNoticia form textarea {
+    width: 100%;
+    height: 340px;
+    margin: 5px 0;
+  }
+  
+  .formCadastrarUsuario form {
+    margin: 2px;
+  }
+  .boxNoticiasCadastradas p {
+    height: initial;
+    margin: 10px auto;
+  }
+  .boxNoticiasCadastradas {
+    justify-content: flex-start;
+    height: initial;
+  }
+  .boxNoticiasCadastradas h4 {
+    height: initial;
+  }
+  .infoNoticiasCadastradas {
+    height: initial;
+    padding: 0 0 10px 0;
+  }
+  .boxNoticiasCadastradas button {
+    margin: 10px 5px 5px;
+  }
+  .form_contato {
+    width: 100%;
+  }
+  .form_mensagem {
+    width: 100%;
+  }
+}
+
+@media (min-width:847px) and (max-width: 1023px) {
+  .topo {
+    height: 200px;
+  }
+  .header {
+    flex-direction: column;
+    justify-content: center;
+    height: 100%
+  }
+  .miolo {
+    width: 100%;
+    margin: 15px 0 15px 0;
+  }
+  .form_contato form {
+    flex-direction: column;
+  }
+  .containerMiolo {
+    justify-content: initial;
+  }
+  .admin_news_user span {
+    margin-left: 10px;
+  }
+  .infoNoticiasCadastradas {
+    height: 200px;
+  }
+  .boxNoticiasCadastradas p {
+    height: 130px;
+  }
+}

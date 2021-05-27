@@ -1,0 +1,28 @@
+{TOPO}
+
+<!-- BEGIN MENSAGEM -->
+<span class="msg">{MSG}</span>
+<!-- END MENSAGEM -->
+
+<div class="miolo">
+  <h3>Editar Notícia</h3>
+
+  <div class="containerEditarNoticia">
+    <div class="formCadastrarNoticia">
+      <form action="/clubes-brasil-2/sql/news-sql/update_news.php" method="post">
+        <input type="hidden" name="id" value="{ID_NOTICIA}">
+
+        <input type="text" name="titulo" id="titulo" value="{TITULO_NOTICIA}" required>
+
+        <textarea name="conteudo" id="conteudo" cols="20" rows="5" required>{CONTEUDO_NOTICIA}</textarea>
+
+        <input type="submit" value="Editar">
+      </form>
+    </div>
+    <a href="/clubes-brasil-2/management/news-management/list_edit_news_management.php">
+      <button>Voltar</button>
+    </a>
+  </div>
+</div>
+
+{RODAPE}
