@@ -5,7 +5,7 @@ function listarNoticiaHome()
 {
   global $conexao;
 
-  $list_news = "SELECT  * FROM noticias ORDER BY noticiaId DESC LIMIT 8";
+  $list_news = "SELECT  * FROM noticias ORDER BY noticiaId DESC LIMIT 9";
   $result_list = mysqli_query($conexao, $list_news);
 
   $noticias = array();
@@ -18,6 +18,7 @@ function listarNoticiaHome()
       "data_cadastro" => $row_noticias["data_cadastro"],
     );
   }
+  
   return $noticias;
 }
 

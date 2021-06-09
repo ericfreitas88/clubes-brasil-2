@@ -1,6 +1,6 @@
 <?php
 session_start();
-include_once("/xampp/htdocs/clubes-brasil-2/includebphp/Template.class.php");
+include_once("/xampp/htdocs/clubes-brasil-2/class/Template.class.php");
 
 $tpl = new Template("/xampp/htdocs/clubes-brasil-2/system/template/contact.html");
 $tpl->addFile("TOPO", "/xampp/htdocs/clubes-brasil-2/template/header.html");

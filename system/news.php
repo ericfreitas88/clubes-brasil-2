@@ -2,7 +2,7 @@
 session_start();
 require_once("/xampp/htdocs/clubes-brasil-2/sql/connection.php");
 include_once("/xampp/htdocs/clubes-brasil-2/sql/news-sql/list_news.php");
-include_once("/xampp/htdocs/clubes-brasil-2/includebphp/Template.class.php");
+include_once("/xampp/htdocs/clubes-brasil-2/class/Template.class.php");
 
 $tpl = new Template("/xampp/htdocs/clubes-brasil-2/system/template/news.html");
 $tpl->addFile("TOPO", "/xampp/htdocs/clubes-brasil-2/template/header.html");
@@ -30,7 +30,7 @@ if (isset($_SESSION['nomeAcesso'])) {
 }
 
 $pagina_atual = filter_input(INPUT_GET, 'pagina', FILTER_SANITIZE_NUMBER_INT);
-$qnt_result_pg = 3;
+$qnt_result_pg = 4;
 $dados = listarNoticia($pagina_atual, $qnt_result_pg);
 
 if (!empty($dados)) {

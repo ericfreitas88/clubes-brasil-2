@@ -1,6 +1,6 @@
 <?php
 session_start();
-include_once("/xampp/htdocs/clubes-brasil-2/includebphp/Template.class.php");
+include_once("/xampp/htdocs/clubes-brasil-2/class/Template.class.php");
 require_once("/xampp/htdocs/clubes-brasil-2/sql/connection.php");
 include_once("/xampp/htdocs/clubes-brasil-2/sql/news-sql/list_news.php");
 
@@ -8,6 +8,7 @@ $tpl = new Template("template/index.html");
 $tpl->addFile("TOPO", "template/header.html");
 $tpl->addFile("MIOLO", "template/conteudo.html");
 $tpl->addFile("RODAPE", "template/footer.html");
+
 
 if (isset($_SESSION['idAcesso'])) {
   $tpl->EDITAR_PERFIL = $_SESSION['idAcesso'];

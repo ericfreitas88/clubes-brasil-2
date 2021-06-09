@@ -2,7 +2,7 @@
 session_start();
 require_once("/xampp/htdocs/clubes-brasil-2/sql/connection.php");
 include_once("/xampp/htdocs/clubes-brasil-2/sql/news-sql/list_news.php");
-include_once("/xampp/htdocs/clubes-brasil-2/includebphp/Template.class.php");
+include_once("/xampp/htdocs/clubes-brasil-2/class/Template.class.php");
 
 if (!isset($_SESSION['nomeAcesso'])) {
   header('location: /clubes-brasil-2/system/login.php');
