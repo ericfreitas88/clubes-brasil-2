@@ -8,18 +8,15 @@ function listarNoticiaHome()
   $list_news = "SELECT  * FROM noticias ORDER BY noticiaId DESC LIMIT 9";
   $result_list = mysqli_query($conexao, $list_news);
 
-  $noticias = array();
+  if (isset($result_list) && !empty($result_list)) {
 
-  while ($row_noticias = mysqli_fetch_assoc($result_list)) {
-    $noticias[] = array(
-      "id" => $row_noticias["noticiaId"],
-      "titulo" => $row_noticias["titulo"],
-      "conteudo" => nl2br($row_noticias["conteudo"]),
-      "data_cadastro" => $row_noticias["data_cadastro"],
-    );
+    return mysqli_fetch_all($result_list, MYSQLI_ASSOC);
+
+  } else {
+
+    return false;
   }
-  
-  return $noticias;
+
 }
 
 function listarNoticia($pagina_atual, $qnt_result_pg)

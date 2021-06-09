@@ -40,7 +40,7 @@ $noticias = listarNoticiaHome();
 
 if (!empty($noticias)) {
   foreach ($noticias as $value) {
-    $tpl->ID_NOTICIA = $value["id"];
+    $tpl->ID_NOTICIA = $value["noticiaId"];
     $tpl->TITULO = $value["titulo"];
     $tpl->CONTEUDO = $value["conteudo"];
     $tpl->block("DADOS");
