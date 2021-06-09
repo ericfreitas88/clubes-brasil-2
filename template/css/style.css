@@ -62,7 +62,6 @@ a {
   width: 100%;
   height: 80px;
   display: flex;
-  justify-content: center;
 }
 
 .navbar {
@@ -850,6 +849,9 @@ a {
   .topo {
     height: 200px;
   }
+  .logo {
+    justify-content: center;
+  }
   .header {
     flex-direction: column;
     justify-content: center;
@@ -1019,7 +1021,6 @@ a {
   .form_mensagem {
     width: 100%;
   }
-
   .form_input {
     align-self: flex-start;
     margin-left: 10px;
